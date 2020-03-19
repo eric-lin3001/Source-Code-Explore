@@ -101,6 +101,27 @@ public class ArrayBasics<E>{
         int r =0;
     }
 
+    /**
+     * find(item) - looks for value and returns first index with that value, -1 if not found
+     */
+
+     public Integer find(E value) {
+         // 要考虑数组中有null的情况
+         if (value == null) {
+             for (int i = 0; i < size; i++)
+                 if (elementData[i]==null)
+                     return i;
+         }else {
+             for(int i=0;i<size;i++){
+                 if(elementData[i].equals(value)){
+                     return i;
+                 }
+             }
+         }
+
+
+         return -1;
+     }
 
 //    public static int getArrayListCapacity(List<Integer> list) throws Exception {
 //
