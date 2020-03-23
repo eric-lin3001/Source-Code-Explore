@@ -1,7 +1,7 @@
 package com.graphql.demolzy.Array;
 
 
-public class ArrayBasics<E>{
+public class MyArrayList<E>{
 
     private int size;
 
@@ -27,7 +27,7 @@ public class ArrayBasics<E>{
      * @throws IllegalArgumentException if the specified initial capacity
      *         is negative
      */
-    public ArrayBasics(int initialCapacity) {
+    public MyArrayList(int initialCapacity) {
         if (initialCapacity > 0) {
             this.elementData = new Object[initialCapacity];
         } else if (initialCapacity == 0) {
@@ -41,7 +41,7 @@ public class ArrayBasics<E>{
     /**
      * Constructs an empty list with an initial capacity of ten.
      */
-    public ArrayBasics() {
+    public MyArrayList() {
         this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
     }
 

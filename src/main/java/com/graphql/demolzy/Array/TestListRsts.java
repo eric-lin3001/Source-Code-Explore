@@ -6,16 +6,24 @@ import java.util.LinkedList;
 public class TestListRsts {
 
     public static void main(String[] args) throws Exception {
-        LinkedListBasics l = new LinkedListBasics();
+        MyLinkedList l1 = new MyLinkedList();
+        l1.item = 7;
+        MyLinkedList l2 = new MyLinkedList();
+        l2.item = 0;
+        MyLinkedList l3 = new MyLinkedList();
+        l3.item = 6;
 
-        l.add("111");
-        l.add("000");
-        l.add("222");
+        l1.next = l2;
+        l2.next = l3;
+        l3.next = null;
 
-        LinkedList l2 = new LinkedList();
-        l2.add(2);
-        l2.add(3);
+        l2.insertAfter(8);
+//        MyLinkedList l2_nth0= l2.nth(0);
+//        MyLinkedList l2_nth1= l2.nth(1);
+        MyLinkedList l2_nth2= l2.nth(2);
 
-        l.add(3);
+        int a =0;
+//        MyLinkedList l4 = new MyLinkedList(7,new MyLinkedList(0,new MyLinkedList(6)));
+
     }
 }

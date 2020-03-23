@@ -1,9 +1,6 @@
 package com.graphql.demolzy.Array;
 
 import java.util.ArrayList;
-import java.util.List;
-import com.graphql.demolzy.Array.ArrayBasics;
-import com.graphql.demolzy.HelloWorld;
 
 public class TestArrRsts {
 
@@ -15,6 +12,8 @@ public class TestArrRsts {
     }
 
     public static void main(String[] args) throws Exception {
+        ArrayList a = new ArrayList();
+
         /**
          * 用数组/指针实现：
          * 1. size() —— 数组元素的个数
@@ -25,7 +24,7 @@ public class TestArrRsts {
          * 6. insert(index, item) —— 在指定索引中插入元素，并把后面的元素依次后移。 TODO System.arraycopy()
          * 7. find(E value) 返回该value的第一个索引值。找不到索引返回-1。 TODO elementData[i].equal(null) 与  elementData[i] == null 的不同点
          */
-        ArrayBasics<Integer> arr = new ArrayBasics<Integer>(10);
+        MyArrayList<Integer> arr = new MyArrayList<Integer>(10);
         arr.add(3);
         arr.add(null);
         arr.add(5);
