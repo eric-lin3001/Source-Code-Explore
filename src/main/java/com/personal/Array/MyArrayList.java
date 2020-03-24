@@ -1,5 +1,4 @@
-package com.graphql.demolzy.Array;
-
+package com.personal.Array;
 
 public class MyArrayList<E>{
 

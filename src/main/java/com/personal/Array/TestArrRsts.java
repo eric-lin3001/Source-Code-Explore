@@ -1,4 +1,4 @@
-package com.graphql.demolzy.Array;
+package com.personal.Array;
 
 import java.util.ArrayList;
 
@@ -34,6 +34,7 @@ public class TestArrRsts {
 //        Integer arrValueOfIndex = arr.get(0);
 //        arr.pop();
         arr.delete(1);
+        System.out.println("ss");
 
 
     }

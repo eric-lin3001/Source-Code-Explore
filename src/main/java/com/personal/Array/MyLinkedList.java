@@ -1,7 +1,4 @@
-package com.graphql.demolzy.Array;
-
-import java.util.AbstractSequentialList;
-import java.util.LinkedList;
+package com.personal.Array;
 
 public class MyLinkedList<E> {
 
