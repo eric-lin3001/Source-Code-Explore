@@ -19,6 +19,7 @@ public class UsingThis {
         y.f();
         x.f();
         y.f();
+        System.out.println(x.toString());
+        System.out.println(x);
     }
-
 }
